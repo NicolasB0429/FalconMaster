@@ -1,16 +1,17 @@
-/* selectores de etiqueta */
-h1,h2,h3{
-    color: brown;
+body{
+    /* por defecto siempre es 16px */
+    font-size: 16px;
 }
-/* -Todos los elementos a que esten dentro de parrafos */
-p a{
+/* % en este caso toma al padre body */
+div{
     font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 50%;
 }
-
-.orange {
-    color: orange;
-}
-a [href="http://www.falconmasters.com"]{
-    color: green;
-    font-size: 30px;
+/* em es para el padre más cercano  */
+/* rem es para el padre body */
+div p{
+    font-size: 1em;
+    font-size: 1rem;
 }
