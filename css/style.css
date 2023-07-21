@@ -1,17 +1,21 @@
-body{
-    /* por defecto siempre es 16px */
-    font-size: 16px;
+/* Palabras clave */
+/* La que no se usa */
+h1{
+    color: red;
 }
-/* % en este caso toma al padre body */
-div{
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    width: 50%;
+/* Práctica y más usada */
+h2{
+    color: #2c0993;
 }
-/* em es para el padre más cercano  */
-/* rem es para el padre body */
-div p{
-    font-size: 1em;
-    font-size: 1rem;
+/* RGB no se usa mucho pero i para la opacidad*/
+h3{
+    color: rgb(53,131,44);
+}
+/* opacado (transparencia) */
+h4{
+    /* del 0 al 1 opacidad */
+    color: rgb(251, 0, 0,.5);
+}
+h5{
+    color: rgb(10%, 20%, 30%);
 }
