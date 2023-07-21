@@ -1,3 +1,7 @@
-body{
-    background-color: black;
+/* (*) para todo y las margenes */
+*{
+    /* margen */
+    margin:0;
+    /* margen interno de los elementos */
+    padding: 0;
 }
