@@ -1,7 +1,16 @@
-/* (*) para todo y las margenes */
-*{
-    /* margen */
-    margin:0;
-    /* margen interno de los elementos */
-    padding: 0;
+/* selectores de etiqueta */
+h1,h2,h3{
+    color: brown;
+}
+/* -Todos los elementos a que esten dentro de parrafos */
+p a{
+    font-size: 20px;
+}
+
+.orange {
+    color: orange;
+}
+a [href="http://www.falconmasters.com"]{
+    color: green;
+    font-size: 30px;
 }
