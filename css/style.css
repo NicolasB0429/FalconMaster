@@ -1,19 +1,15 @@
-/* Colocar imagenes de fondo por ruta (url) */
-body{
-    /* .. es para devolverse en una ruta */
-    background:url(../imagenes/favicon.png);
-    /* para repetir solo una vez */
-    background-repeat:no-repeat; 
-    /* para repetir solo en un eje */
-    background-repeat:repeat-x; 
-    /* Para que el fondo se arregle cuando se hace scroll */
-    background-attachment:fixed;
-    /* Tambien se puede esta */
-    background-attachment:scroll;
-    /* Darle color a toda la letra */
-    color:#030303;
-    /* Posicionar el fondo  valores(derecha, abajo)*/
-    background-position: 500% 200px; 
-    /* Así se puede en el centro de todo el cocumento */
-    background-position:center;
+div{
+    /* Se puede trabajar con porcentajes */
+    width:50%;
+    height: 100px;
+    background:#ff8000;
+    /* Margenes externos (arriba bajo, lados) */
+    margin:20px 50px;
+    /* margen interior */
+    padding:30px;
+    /* Borde eso se agrega de más a los px */
+    border:10px solid; /*Hay mucha variadead ademas de solid */
+    /*  para alterar los bloques (investigar más)*/
+    display:inline-block;
+    
 }
