@@ -1,15 +1,30 @@
 div{
-    /* Se puede trabajar con porcentajes */
-    width:50%;
-    height: 100px;
-    background:#ff8000;
-    /* Margenes externos (arriba bajo, lados) */
-    margin:20px 50px;
-    /* margen interior */
-    padding:30px;
-    /* Borde eso se agrega de más a los px */
-    border:10px solid; /*Hay mucha variadead ademas de solid */
-    /*  para alterar los bloques (investigar más)*/
-    display:inline-block;
-    
+    width:100px;
+    height:100px;
+    background: #4a88f4;
+    color:fff;
+    font: size 20px;
+    /*posicionamiendo float muy usado para paginas complejas*/
+    float: left; /* left right*/
+    /*clear:both; Sirve para limpiar el flotante*/
 }
+
+.caja{
+    position:static; /*relaive, absolute, fixed, static*/
+    /* Propiedades para desplzar las cajas */
+    top: 100px; /*hacia abajo*/
+    bottom: 0px; /* Coloca el elemento a 20 píxeles desde el borde inferior del contenedor posicionado más cercano */
+    right: 0px; /*Desplazar a la derecha*/
+    left: 300px; /*Desplazar a la izquierda*/
+}
+
+/*comentarios
+absolute no se suele utilizar porque se trabajaria por coordenadas
+Si hay una caja padre y se le agrega el relative la caja hijo depende de la padre
+El fixed no afecta el scroll se queda fijo 
+Si se deja static las posiciones top, botton rigth y left no funcionan
+*/
+
+/* Posicionamiento Flotante
+Es la que permite obtener diseños por columna diseños avanzados
+*/
