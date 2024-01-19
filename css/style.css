@@ -1,36 +1,21 @@
-a{
-    /* Se puede agregar las mismas propiedad que a los textos*/
-    font-size:20px;
-    text-decoration: none; 
-    margin: 10px 10px;
-    display: inline-block; /*Pasar de elemento en linea a bloque, sirve para el padding*/
-    background-color: rgb(165, 165, 236);
-    color: rgb(253, 253, 253);
-    padding: 10px 20px;
-    box-shadow: 0px 5px 0px #b744a0;/*Sombra*/
+/* El contenedor en este caso seria el div */
+div{
+    background-color: rgb(109, 124, 192);
+    width: 100%;
 }
 
-/* Enlaces que no han sido visitados */
-a:link{
-    color: rgb(255, 196, 199);
-    font-size: 15px;
-}
+img{
+    /* Se puede hacer el width para que el heigh sea automatico */
+    width: 300px;
+    /* Margin auto nos permite centrar un contenedor con display-block */
+    margin: auto;
+    display: block;
+    /* Para redondear los bordes de la imagen */
+    border-radius: 20%;
+    /* Para darle la sombra */
+    /* box-shadow: 5px 5px #767070; */
 
-/*  Enlaces que hemos visitado*/
-a:visited{
-    color: blueviolet;
-}
-
-/* Efecto cuando se pasa el mouse por el link */
-a:hover{
-    text-decoration: underline; /*Subrayado*/
-    background-color: rgb(78, 73, 73);
-    color: rgb(254, 254, 254);
-    box-shadow: 0px 2px 0px #b744a0;/*Sombra*/
-}
-
-/* Qué va a pasar cuando el usuario le de un click */
-a:active{
-    background-color: orange;
-    box-shadow: 0px 0px 0px #b744a0;/*Sombra*/
+    /* Agregar margen interno y un borde efecto retrato */
+    padding: 10px;
+    border: 1px solid #CCC;
 }
