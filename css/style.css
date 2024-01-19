@@ -1,30 +1,29 @@
-div{
-    width:100px;
-    height:100px;
-    background: #4a88f4;
-    color:fff;
-    font: size 20px;
-    /*posicionamiendo float muy usado para paginas complejas*/
-    float: left; /* left right*/
-    /*clear:both; Sirve para limpiar el flotante*/
+h1{
+    /* SE puede sentrar todo lo que sea tipo bloque */
+    font-weight: normal;
+    text-align: center;
+    background-color: gray;
 }
-
-.caja{
-    position:static; /*relaive, absolute, fixed, static*/
-    /* Propiedades para desplzar las cajas */
-    top: 100px; /*hacia abajo*/
-    bottom: 0px; /* Coloca el elemento a 20 píxeles desde el borde inferior del contenedor posicionado más cercano */
-    right: 0px; /*Desplazar a la derecha*/
-    left: 300px; /*Desplazar a la izquierda*/
+p{
+    /* Sirve para cambiar el tipo de fuente */
+    font-family: Arial, Helvetica, Sans-serif, "Verdana";
+    /* Tamaño de letra */
+    font-size: 20px;
+    /* tambien se puede usar con números */
+    font-weight: bold;
+    /* Alinear textos center, left and rigth */
+    text-align: left;
+    /* Modificar el interlineado */
+    line-height: 30px;
+    /* Decordado al texto (none, underline, line-through) */
+    text-decoration: none;
+    /* Realizar todas las primeras mayusculas o cosas así */
+    /* capitalize, uppercase, lowercase*/
+    text-transform: uppercase;
+    /* Espaciado entre letras */
+    letter-spacing: normal;
+    /* Espacio en cada palabra */
+    word-spacing: normal;
+    /* Sombra al texto (horizontal, vertical, tamaño y color)*/
+    text-shadow: 1px 1px 0px #000;
 }
-
-/*comentarios
-absolute no se suele utilizar porque se trabajaria por coordenadas
-Si hay una caja padre y se le agrega el relative la caja hijo depende de la padre
-El fixed no afecta el scroll se queda fijo 
-Si se deja static las posiciones top, botton rigth y left no funcionan
-*/
-
-/* Posicionamiento Flotante
-Es la que permite obtener diseños por columna diseños avanzados
-*/
