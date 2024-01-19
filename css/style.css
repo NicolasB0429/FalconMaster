@@ -1,21 +1,45 @@
-/* El contenedor en este caso seria el div */
-div{
-    background-color: rgb(109, 124, 192);
+ul{
+    /* Item cicle, square, disc */
+    list-style-type: square;
+    /* Posición hacía dentro*/
+    list-style-position: inside;
+    /* Posición hacía fuera */
+    list-style-position: outside;
+}
+
+/* Lista ordenada */
+ol{
+    /* Letras todas en mayusculas */
+    list-style-type: upper-latin;
+    /* Letras todas en minusculas */
+    list-style-type: lower-latin; 
+}
+
+.menu{
+    /* Anccho normal */
     width: 100%;
+    /* Fondo */
+    background-color:000;
+    /* Para quitar los items por decirlo así */
+    list-style: none;
+    /* quitar espacio que queda a la izquierda */
+    margin: 0;
+    padding: 0;
 }
 
-img{
-    /* Se puede hacer el width para que el heigh sea automatico */
-    width: 300px;
-    /* Margin auto nos permite centrar un contenedor con display-block */
-    margin: auto;
-    display: block;
-    /* Para redondear los bordes de la imagen */
-    border-radius: 20%;
-    /* Para darle la sombra */
-    /* box-shadow: 5px 5px #767070; */
-
-    /* Agregar margen interno y un borde efecto retrato */
-    padding: 10px;
-    border: 1px solid #CCC;
+.menu li{
+    /* Colocar uno al lado del otro */
+    display: inline-block;
 }
+
+.menu li a{
+    padding: 10px 29px;
+    display: inline-block;
+    color: #fff;
+}
+
+/* Pseudo clase hover */
+.menu li a:hover{
+    background-color: #ccc;
+    color: #000;
+};
