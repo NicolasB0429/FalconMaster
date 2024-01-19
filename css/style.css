@@ -1,29 +1,36 @@
-h1{
-    /* SE puede sentrar todo lo que sea tipo bloque */
-    font-weight: normal;
-    text-align: center;
-    background-color: gray;
+a{
+    /* Se puede agregar las mismas propiedad que a los textos*/
+    font-size:20px;
+    text-decoration: none; 
+    margin: 10px 10px;
+    display: inline-block; /*Pasar de elemento en linea a bloque, sirve para el padding*/
+    background-color: rgb(165, 165, 236);
+    color: rgb(253, 253, 253);
+    padding: 10px 20px;
+    box-shadow: 0px 5px 0px #b744a0;/*Sombra*/
 }
-p{
-    /* Sirve para cambiar el tipo de fuente */
-    font-family: Arial, Helvetica, Sans-serif, "Verdana";
-    /* Tamaño de letra */
-    font-size: 20px;
-    /* tambien se puede usar con números */
-    font-weight: bold;
-    /* Alinear textos center, left and rigth */
-    text-align: left;
-    /* Modificar el interlineado */
-    line-height: 30px;
-    /* Decordado al texto (none, underline, line-through) */
-    text-decoration: none;
-    /* Realizar todas las primeras mayusculas o cosas así */
-    /* capitalize, uppercase, lowercase*/
-    text-transform: uppercase;
-    /* Espaciado entre letras */
-    letter-spacing: normal;
-    /* Espacio en cada palabra */
-    word-spacing: normal;
-    /* Sombra al texto (horizontal, vertical, tamaño y color)*/
-    text-shadow: 1px 1px 0px #000;
+
+/* Enlaces que no han sido visitados */
+a:link{
+    color: rgb(255, 196, 199);
+    font-size: 15px;
+}
+
+/*  Enlaces que hemos visitado*/
+a:visited{
+    color: blueviolet;
+}
+
+/* Efecto cuando se pasa el mouse por el link */
+a:hover{
+    text-decoration: underline; /*Subrayado*/
+    background-color: rgb(78, 73, 73);
+    color: rgb(254, 254, 254);
+    box-shadow: 0px 2px 0px #b744a0;/*Sombra*/
+}
+
+/* Qué va a pasar cuando el usuario le de un click */
+a:active{
+    background-color: orange;
+    box-shadow: 0px 0px 0px #b744a0;/*Sombra*/
 }
