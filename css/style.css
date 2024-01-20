@@ -1,45 +1,21 @@
-ul{
-    /* Item cicle, square, disc */
-    list-style-type: square;
-    /* Posición hacía dentro*/
-    list-style-position: inside;
-    /* Posición hacía fuera */
-    list-style-position: outside;
-}
-
-/* Lista ordenada */
-ol{
-    /* Letras todas en mayusculas */
-    list-style-type: upper-latin;
-    /* Letras todas en minusculas */
-    list-style-type: lower-latin; 
-}
-
-.menu{
-    /* Anccho normal */
+table{
+    /* border: 1px solid #000; */
+    border-collapse: collapse;
     width: 100%;
-    /* Fondo */
-    background-color:000;
-    /* Para quitar los items por decirlo así */
-    list-style: none;
-    /* quitar espacio que queda a la izquierda */
-    margin: 0;
-    padding: 0;
 }
 
-.menu li{
-    /* Colocar uno al lado del otro */
-    display: inline-block;
+/* celdas */
+table td{
+    border: 1px solid #000;
+    padding: 20px;
 }
 
-.menu li a{
-    padding: 10px 29px;
-    display: inline-block;
+/* Filas */
+table tr:hover{
+    background-color: #ccc;
+}
+
+table td:hover{
+    background-color: #000;
     color: #fff;
 }
-
-/* Pseudo clase hover */
-.menu li a:hover{
-    background-color: #ccc;
-    color: #000;
-};
