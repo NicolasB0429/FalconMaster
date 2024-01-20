@@ -1,21 +1,49 @@
-table{
-    /* border: 1px solid #000; */
-    border-collapse: collapse;
-    width: 100%;
-}
-
-/* celdas */
-table td{
-    border: 1px solid #000;
+form{
+    width: 25%;
+    border: 1px solid #ccc;
+    margin: 20px;
     padding: 20px;
 }
 
-/* Filas */
-table tr:hover{
-    background-color: #ccc;
+label{
+    font-size: 12px;
+    /* Labels etiqueta en linea por defecto*/
+    display: block;
+    width: 100%;
 }
 
-table td:hover{
-    background-color: #000;
+textarea{
+    /* Ajustar el texarea */
+    resize: vertical; /*horizontal, both, vertical*/
+    max-height: 300px;
+    min-height: 100px;
+
+}
+
+input, textarea{
+    /* Para que no queden tan amontonados */
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+/* Cuando el usuario este seleccionando un input */
+input:focus, textarea:focus{
+    border: 1px dolid #2600ff;
+}
+
+/* Todos los input que tengan type y submit */
+input[type="submit"]{
+    margin-bottom: 0px;
+    background-color: #2600ff;
     color: #fff;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(53, 47, 168);
+    /* Para que parezca que se puede clickear */
+    cursor: pointer;
 }
