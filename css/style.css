@@ -1,49 +1,74 @@
-form{
-    width: 25%;
-    border: 1px solid #ccc;
-    margin: 20px;
-    padding: 20px;
+/* Elimiar las margenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-label{
-    font-size: 12px;
-    /* Labels etiqueta en linea por defecto*/
+body {
+    background-color: #e6e6e6;
+}
+
+/* Diseño responsive cuando se ajustan las medidas dependiento del ispositivo */
+header, .main, footer {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+header nav {
+    background: #528fd5;
+    /* Ocultar el contenido que sobrepasa y limpia float left */
+    overflow: hidden;
+}
+
+header nav ul{
+    /* Remover los indices que trae por defecto */
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
     display: block;
-    width: 100%;
-}
-
-textarea{
-    /* Ajustar el texarea */
-    resize: vertical; /*horizontal, both, vertical*/
-    max-height: 300px;
-    min-height: 100px;
-
-}
-
-input, textarea{
-    /* Para que no queden tan amontonados */
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-}
-
-/* Cuando el usuario este seleccionando un input */
-input:focus, textarea:focus{
-    border: 1px dolid #2600ff;
-}
-
-/* Todos los input que tengan type y submit */
-input[type="submit"]{
-    margin-bottom: 0px;
-    background-color: #2600ff;
     color: #fff;
-    border: none;
+    text-decoration: none;
 }
 
-input[type="submit"]:hover{
-    background-color: rgb(53, 47, 168);
-    /* Para que parezca que se puede clickear */
-    cursor: pointer;
+/* Color cuando pasa el cursor (pseudo clase) */
+header nav ul li a:hover{
+    background-color: #75acec;
+}
+
+/* Ahora sigue el main */
+.main .articles{
+    width: 68.5%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+.main .articles article{
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+aside{
+    width: 30%;
+    background-color: #ff8000;
+    float: left;
+    padding: 20px;
+    /* Investigar */
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
 }
